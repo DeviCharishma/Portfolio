@@ -6,12 +6,12 @@ const Hero = () => {
   return (
     <section id="home" className="hero-section">
       <div className="hero-bg-overlay"></div>
-      
+
       <div className="hero-content animate-fade-in-up">
         <div className="profile-container">
-          <img 
-            src={profilePic} 
-            alt="Devi Charishma Burugupalli" 
+          <img
+            src={profilePic}
+            alt="Devi Charishma Burugupalli"
             className="profile-img"
             onError={(e) => {
               e.target.onerror = null;
@@ -19,17 +19,15 @@ const Hero = () => {
             }}
           />
         </div>
-        
+
         <h1 className="hero-name">DEVI CHARISHMA BURUGUPALLI</h1>
-        
+
         <div className="hero-titles">
           <span>Software Engineer</span>
           <span className="dot">•</span>
-          <span>AI/ML</span>
+          <span>AI/ML Specialist</span>
           <span className="dot">•</span>
-          <span>Data Analyst</span>
-          <span className="dot">•</span>
-          <span>Data Engineer</span>
+          <span>Big Data Engineering</span>
         </div>
 
         <div className="hero-socials">
