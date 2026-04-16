@@ -1,0 +1,67 @@
+body {
+  cursor: none; /* Hide default cursor to use custom one */
+}
+
+/* Ensure links and buttons override custom cursor cleanly or allow clicks */
+a, button, input, textarea {
+  cursor: none; /* keep default hidden */
+}
+
+.custom-cursor-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #ef4444; /* explicitly red */
+  border-radius: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9999;
+  transition: opacity 0.3s ease;
+}
+
+.custom-cursor-outline {
+  width: 40px;
+  height: 40px;
+  border: 2px solid rgba(239, 68, 68, 0.6); /* red outline */
+  border-radius: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9998;
+  transition: width 0.2s, height 0.2s, background-color 0.2s, opacity 0.3s;
+  transition-timing-function: ease-out;
+}
+
+/* Interaction States */
+.custom-cursor-dot.hidden,
+.custom-cursor-outline.hidden {
+  opacity: 0;
+}
+
+.custom-cursor-outline.clicked {
+  width: 25px;
+  height: 25px;
+  background-color: rgba(239, 68, 68, 0.3);
+}
+
+/* Optional: hover effects for links can be added via JS state, 
+   but this pure CSS scale provides immediate haptic feedback */
+a:hover ~ .custom-cursor-outline, 
+button:hover ~ .custom-cursor-outline {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(239, 68, 68, 0.1);
+  border-width: 3px;
+  border-color: #ef4444; /* pure red ring */
+  mix-blend-mode: normal;
+}
+
+@media (max-width: 768px) {
+  /* Disable custom cursor on mobile */
+  .custom-cursor-dot, .custom-cursor-outline {
+    display: none;
+  }
+  body, a, button {
+    cursor: auto;
+  }
+}

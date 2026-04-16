@@ -1,0 +1,64 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Base section spacing - decreased padding and alternating backgrounds handled via wrappers */
+.section-wrapper {
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.section-wrapper.bg-alt {
+  background-color: #f1f5f9; /* Soft alternating background */
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+section {
+  padding: 5rem 5%;  /* Decreased padding */
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.section-title {
+  font-size: 2.8rem;
+  margin-bottom: 4rem;
+  text-align: center;
+  color: var(--text-primary);
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: var(--accent-gradient);
+  border-radius: 2px;
+}
+
+.footer {
+  text-align: center;
+  padding: 3rem;
+  background-color: var(--surface-color);
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  border-top: 1px solid var(--surface-border);
+  margin-top: auto;
+}
+
+/* Page transitions */
+.page-enter {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.5s ease forwards;
+}
