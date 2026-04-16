@@ -1,15 +1,16 @@
 import React from 'react';
 import './Hero.css';
+import profilePic from '../assets/profile.jpg';
 
 const Hero = () => {
   return (
     <section id="home" className="hero-section">
       <div className="hero-bg-overlay"></div>
       
-      <div className="hero-content card-panel animate-fade-in">
+      <div className="hero-content animate-fade-in-up">
         <div className="profile-container">
           <img 
-            src="/src/assets/profile.jpg" 
+            src={profilePic} 
             alt="Devi Charishma Burugupalli" 
             className="profile-img"
             onError={(e) => {

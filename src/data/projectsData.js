@@ -1,8 +1,13 @@
+import ragImg from '../assets/rag_orchestrator.png';
+import hiringImg from '../assets/hiring_express.png';
+import evImg from '../assets/ev_charging.png';
+import instaImg from '../assets/instagram_fake.png';
+
 export const projectsData = [
   {
     id: 1,
     title: "Multi-Agent Interview Orchestrator with RAG",
-    image: "/src/assets/rag_orchestrator.png",
+    image: ragImg,
     period: "Jan 2026 - Mar 2026",
     skills: ["RAG", "Agentic Workflows", "Prompt Engineering", "LLM", "Python", "React.js"],
     about: [
@@ -15,7 +20,7 @@ export const projectsData = [
   {
     id: 2,
     title: "Intelligent Full-Stack App - Cook Hiring Express",
-    image: "/src/assets/hiring_express.png",
+    image: hiringImg,
     period: "Oct 2025 - Dec 2025",
     skills: ["React.js", "Node.js", "Express", "MySQL", "JWT", "OpenAI Embeddings"],
     about: [
@@ -28,7 +33,7 @@ export const projectsData = [
   {
     id: 3,
     title: "EV Charging Stations & EV Population",
-    image: "/src/assets/ev_charging.png",
+    image: evImg,
     period: "Feb 2025 - Apr 2025",
     skills: ["Python", "Plotly", "Altair", "Tableau", "Power BI", "D3.js"],
     about: [
@@ -53,7 +58,7 @@ export const projectsData = [
   {
     id: 5,
     title: "Detection of Fake Accounts in Instagram",
-    image: "/src/assets/instagram_fake.png",
+    image: instaImg,
     period: "Past Project",
     skills: ["Python", "Machine Learning", "Scikit-Learn", "Data Analysis", "Pandas", "Random Forest"],
     about: [

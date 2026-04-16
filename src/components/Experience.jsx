@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import untLogo from '../assets/unt_logo.png';
+import gepLogo from '../assets/gep_logo_attached.png';
 import './Experience.css';
 
 const experiences = [
@@ -6,7 +8,7 @@ const experiences = [
     id: 1,
     role: "Salesforce Admin | Developer (Software Developer)",
     company: "University of North Texas",
-    logo: "/src/assets/unt_logo.png",
+    logo: untLogo,
     period: "Jan 2025 - Present",
     location: "Denton, Texas",
     points: [
@@ -22,7 +24,7 @@ const experiences = [
     id: 2,
     role: "Software Engineer",
     company: "GEP Worldwide",
-    logo: "/src/assets/gep_logo_attached.png",
+    logo: gepLogo,
     period: "July 2022 - Jun 2024",
     location: "Hyderabad, India",
     points: [
